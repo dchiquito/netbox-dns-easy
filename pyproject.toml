@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "netbox-dns-easy"
+version = "0.1.0"
+description = "Easy DNS management in Netbox"
+authors = ["Daniel Chiquito <daniel.chiquito@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "netbox_dns_easy"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+netbox = "^0.0.2"
+netbox-plugin-dns = "^1.1.5"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
