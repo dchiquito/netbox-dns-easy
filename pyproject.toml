@@ -9,7 +9,6 @@ packages = [{include = "netbox_dns_easy"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-netbox = "^0.0.2"
 netbox-plugin-dns = "^1.1.5"
 
 [tool.poetry.group.dev.dependencies]
