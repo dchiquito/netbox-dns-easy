@@ -6,7 +6,7 @@ class NetBoxAccessListsConfig(PluginConfig):
     verbose_name = "Easy DNS for NetBox"
     description = "A simple interface for DNS management in NetBox"
     version = "0.1"
-    base_url = "access-lists"
+    base_url = "dns-easy"
 
 
 config = NetBoxAccessListsConfig
