@@ -1,10 +1,8 @@
 from django.db.models import F
-from dcim.models import Device
-from ipam.models import IPAddress
 from netbox.views import generic
 from netbox_dns.models import Record
 
-from . import forms, tables
+from . import tables
 
 
 class DeviceDomainsView(generic.ObjectListView):
