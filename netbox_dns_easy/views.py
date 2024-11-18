@@ -32,14 +32,10 @@ class DeviceDomainsView(generic.ObjectListView):
                 device_pk=F("ipam_ip_address__interface__device__pk"),
                 device_name=F("ipam_ip_address__interface__device__name"),
                 device_status=F("ipam_ip_address__interface__device__status"),
-                device_tenant_pk=F(
-                    "ipam_ip_address__interface__device__tenant__pk"),
-                device_tenant=F(
-                    "ipam_ip_address__interface__device__tenant__name"),
-                device_site_pk=F(
-                    "ipam_ip_address__interface__device__site__pk"),
-                device_site=F(
-                    "ipam_ip_address__interface__device__site__name"),
+                device_tenant_pk=F("ipam_ip_address__interface__device__tenant__pk"),
+                device_tenant=F("ipam_ip_address__interface__device__tenant__name"),
+                device_site_pk=F("ipam_ip_address__interface__device__site__pk"),
+                device_site=F("ipam_ip_address__interface__device__site__name"),
             )
         )
 
